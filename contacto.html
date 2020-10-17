@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.0/css/all.css" integrity="sha384-OLYO0LymqQ+uHXELyx93kblK5YIS3B2ZfLGBmsJaUyor7CpMTBsahDHByqSuWW+q" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/web.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <title>Contacto</title>
+  </head>
+  <body>
+      <div style="font-family: 'Roboto', sans-serif;">
+  
+<nav class="navbar navbar-expand-lg navbar-light bg-white">
+    <a class="navbar-brand" href="principal.html" style="font-family: 'Roboto', sans-serif; font-weight: 1000; font-size: 25px;">SHOOT ZOOM</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+  
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <form class="navbar-nav ml-auto">
+          <div class="menu">
+            <a href="principal.html" style="color: black; text-decoration: none;">Inicio</a>
+            <a href="articulos.html" style="color: black; text-decoration: none;">Articulos</a>
+            <a href="contacto.html" style="color: black; text-decoration: none; margin-right: 25px;">Contacto</a>
+            <a href="https://www.facebook.com" style="color: black; text-decoration: none;"><i class="fab fa-facebook"></i> </a>
+            <a href="https://www.twitter.com" style="color: black;"><i class="fab fa-twitter-square"></i></a>
+            <a href="https://www.instagram.com" style="color: black;"><i class="fab fa-instagram-square"></i></a>
+          </div>
+      </form>
+    </div>
+  </nav>
+
+
+    <div class="info" style="padding: 1em; margin-top: 2.5%;">
+        <span style="font-weight: bold;">Contactenos a:</span><br>
+        425 W Beech S<br>
+        San Diego CA<br>
+        92101 <br><br>
+        +1 619-630-4474 <br>
+        fesogu@roadmail.com
+    </div>
+
+        <div class="correo">
+            Email <input type="text" name="">
+        </div>
+        <div class="nombre">
+            Nombre <input type="text" name=""> <br> <br>
+            <span>Mensaje</span> <textarea name="" id="" cols="21" rows="8"></textarea>
+        </div>
+        <div>
+            <button class="enviar"><a href="principal.html" style="color: white; text-decoration: none;">Enviar</a></button>
+        </div>
+
+
+      <div id="map"></div>
+      <script>
+        function initMap() {
+          const Fesogu = { lat: 32.7206848, lng: -117.1670718 };
+          const map = new google.maps.Map(document.getElementById("map"), {
+            zoom: 15,
+            center: Fesogu,
+          });
+          const marker = new google.maps.Marker({
+            position: Fesogu,
+            map: map,
+          });
+        }
+      </script>
+      <script
+        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAzKheN2QaViqI7Y4xueZWruj7AJgESEJo&callback=initMap&libraries=&v=weekly"
+        defer
+      ></script>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,43 @@
+body{
+    background-image: url(../img/inicio.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    font-family: 'Roboto', sans-serif;
+}
+
+.home{
+    text-align: center;
+    color: white;
+    font-weight: bolder;
+    font-size: 35px;
+    left: 50%;
+    margin-left:-275px;
+    margin-top: -150px;
+    position: absolute;
+    top: 50%;
+}
+
+
+
+@media only screen and (max-width: 990px) {
+    body{
+        background-image: url(../img/inicio.jpg);
+        background-repeat: no-repeat;
+        background-attachment: fixed;
+        background-position: center;
+        font-family: 'Roboto', sans-serif;
+    }
+
+    .home{
+        text-align: center;
+        color: white;
+        font-weight: bolder;
+        font-size: 35px;
+        left: 50%;
+        margin-left:-275px;
+        margin-top: -150px;
+        position: absolute;
+        top: 50%;
+    }
+}
